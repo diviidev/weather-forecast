@@ -3,6 +3,7 @@
 }
 #column1 {
   width: 60%;
+  height: 700px;
   background-color: red;
 }
 #heading {
@@ -40,4 +41,27 @@
 #body2 {
   text-align: center;
   padding-top: 30px;
+}
+#column2 {
+  width: 40%;
+  height: 700px;
+  background-color: greenyellow;
+  display: flex;
+  flex-direction: column;
+}
+#section1 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+#section2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 300px;
+}
+#temp {
+  width: 100px;
+  height: 100px;
+  background-color: plum;
+  text-align: center;
 }
