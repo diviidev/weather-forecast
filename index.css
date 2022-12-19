@@ -1,10 +1,13 @@
-#mega-container {
-  display: flex;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
 }
 #column1 {
-  width: 60%;
-  height: 700px;
-  background-color: red;
+  height: 100vh;
+  background-color: #f1f2b5;
+  background: linear-gradient(to right, #135058, #f1f2b5);
 }
 #heading {
   display: flex;
@@ -15,10 +18,8 @@
   color: white;
   padding-left: 40px;
   padding-top: 40px;
-  background-color: aqua;
 }
 #head2 {
-  background-color: black;
   font-size: 20px;
   color: white;
   width: 100%;
@@ -30,38 +31,41 @@
 #body {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 #body1 {
   text-align: center;
-  font-size: 30px;
-  margin-top: 200px;
-  border-bottom: green solid 5px;
-  padding-bottom: 20px;
+  font-size: 44px;
+  margin-top: 100px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 #body2 {
   text-align: center;
-  padding-top: 30px;
-}
-#column2 {
-  width: 40%;
-  height: 700px;
-  background-color: greenyellow;
+  padding-top: 25px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
-#section1 {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 100px;
+.line {
+  color: white;
+  width: 150px;
+  height: 5px;
+  background-color: white;
+  border-radius: 72px;
 }
-#section2 {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 300px;
+.searchbox {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
 }
-#temp {
-  width: 100px;
-  height: 100px;
-  background-color: plum;
-  text-align: center;
+.click {
+  background-color: #135058;
+  color: white;
+  padding: 10px 35px;
+  font-size: 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
