@@ -2,7 +2,6 @@ function getDate() {
   var date = new Date().toLocaleDateString();
   var x = document.getElementById("head2");
   x.innerHTML = `${date}`;
-  console.log(date);
 }
 function weather() {
   var parent = document.getElementById("column1");
@@ -13,10 +12,8 @@ function weather() {
   fetch(url) //here we call the api/request
     .then((response) => response.json()) //after the api is fetched what should be done ->we converted the backend response to json format
     .then((data) => {
-      console.log(data);
       var div = document.createElement("div");
       div.classList.add("showbox");
-      // var icon = `https://openweathermap.org/img/wn/&{}.png`;
       div.innerHTML = `
       <div class="left">
         <p class="tempshow ">
@@ -41,6 +38,3 @@ function weather() {
       parent.appendChild(div);
     });
 }
-
-// ${Math.round(
-//   data.main.temp
