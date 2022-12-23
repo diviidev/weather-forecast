@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="diviidev" />
+    <link href="image/weather.ico" rel="icon" type="image/x-icon" />
+    <title>Weather Forecast</title>
+    <script src="javascript/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body onload="getDate()">
+    <div id="column1">
+      <div id="heading">
+        <div id="head1">diviidev</div>
+        <div id="head2"></div>
+      </div>
+      <div id="body">
+        <div id="body1">Aaj Mausam Bada Beimaan Hai ?</div>
+      </div>
+      <hr class="line" />
+      <div id="body2">
+        <input
+          type="text"
+          size="40"
+          placeholder="Enter your location"
+          id="searchbox"
+        />
+        <button class="click" onclick="weather()">search</button>
+      </div>
+      <!-- <div id="row2">
+        <div id="showbox">
+          <div id="tempshow"></div>
+          <div id="weather"></div>
+          <p id="showbox-date"></p>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
