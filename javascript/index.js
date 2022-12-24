@@ -13,7 +13,7 @@ function weather() {
     .then((response) => response.json()) //after the api is fetched what should be done ->we converted the backend response to json format
     .then((data) => {
       var div = document.createElement("div");
-      div.classList.add("showbox");
+      div.classList.add("showbox");// this means that we are giving class showbox to the div we careated
       div.innerHTML = `
       <div class="left">
         <p class="tempshow ">
