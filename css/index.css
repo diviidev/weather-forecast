@@ -141,4 +141,25 @@ body {
     margin: 0 40px;
     margin-top: 20px;
   }
+  .showbox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: none;
+    margin-top: 30px;
+  }
+  .left {
+    border-right: none;
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .left p {
+    margin-right: 0;
+  }
+  .left img {
+    margin-right: 0;
+  }
+  .right {
+    align-items: center;
+  }
 }
