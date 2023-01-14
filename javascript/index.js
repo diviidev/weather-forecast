@@ -14,7 +14,7 @@ function weather() {
     .then((data) => {
       console.log(data);
       var div = document.createElement("div");
-      div.classList.add("showbox");
+      div.classList.add("showbox");// this means that we are giving class showbox to the div we careated
       div.innerHTML = `
       <div class="left">
         <p class="tempshow ">
