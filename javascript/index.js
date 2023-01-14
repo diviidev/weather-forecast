@@ -12,6 +12,7 @@ function weather() {
   fetch(url) //here we call the api/request
     .then((response) => response.json()) //after the api is fetched what should be done ->we converted the backend response to json format
     .then((data) => {
+      console.log(data);
       var div = document.createElement("div");
       div.classList.add("showbox");
       div.innerHTML = `
@@ -21,7 +22,7 @@ function weather() {
         </p>
         <img src="https://openweathermap.org/img/wn/${
           data.weather[0].icon
-        }.png" alt="CA"/>
+        }.png" alt="weather icon"/>
       </div>
       <div class="right"> 
         <p class="weathershow">
