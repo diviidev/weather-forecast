@@ -8,7 +8,7 @@ function weather() {
   var city = document.getElementById("searchbox").value;
   var key = "ecfae499d3a6990d513e872644874cd4";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}&units=metric%60`;
-
+  document.querySelectorAll(".showbox").forEach(el => el.remove());
   fetch(url) //here we call the api/request
     .then((response) => response.json()) //after the api is fetched what should be done ->we converted the backend response to json format
     .then((data) => {
